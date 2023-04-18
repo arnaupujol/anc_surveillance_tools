@@ -49,7 +49,7 @@ Once activated, install the required packages:
 
 `conda install -c anaconda openpyxl`
 
-Then, install the packages from the repositories [EpiFRIenDs v1.0](https://github.com/arnaupujol/epifriends), [stat_tools 1.0](https://github.com/arnaupujol/stat_tools), 
+Then, install the packages from the repositories [EpiFRIenDs 1.0](https://github.com/arnaupujol/epifriends), [stat_tools 1.0](https://github.com/arnaupujol/stat_tools), 
 [pregmal_pytools 1.0](https://github.com/arnaupujol/pregmal_pytools), [spatial_tools 1.0](https://github.com/arnaupujol/spatial_tools) and [genomics 1.0](https://github.com/arnaupujol/genomics).
 
 For this, clone the repositories or download and uncompress the zip file of the release, 
