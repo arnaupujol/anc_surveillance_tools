@@ -2,9 +2,8 @@
 # Detecting temporal and spatial malaria patterns from first antenatal care visits
 
 This repository contains the code used to generate the results of the analysis
-of the manuscript 'Detecting temporal and spatial malaria patterns from first
-antenatal care visits', and some simulated data to validate the performance of
-the codes.
+of the manuscript Pujol et al., 'Detecting temporal and spatial malaria patterns from first
+antenatal care visits', Nature Communications 2023.
 
 Software requirements:
 ----------------------
@@ -23,11 +22,11 @@ All the packages that are required are:
 - contextily
 
 And the following local packages:
-- EpiFRIenDs version 1.0
-- stat_tools
-- pregmal_pytools
-- spatial_tools
-- genomic_tools
+- [EpiFRIenDs version 1.0](https://github.com/arnaupujol/epifriends)
+- [stat_tools version 1.0](https://github.com/arnaupujol/stat_tools)
+- [pregmal_pytools version 1.0](https://github.com/arnaupujol/pregmal_pytools)
+- [spatial_tools version 1.0](https://github.com/arnaupujol/spatial_tools)
+- [genomics version 1.0](https://github.com/arnaupujol/genomics)
 
 Installation instructions:
 --------------------------
@@ -44,16 +43,17 @@ And then activate the environment:
 `conda activate py38`
 
 Once activated, install the required packages:
-`conda install ipython jupyter jupyterlab numpy pandas geopandas matplotlib scipy`
+`conda install ipython jupyter jupyterlab numpy pandas geopandas>=0.9 matplotlib scipy>=1.7`
 
 `conda install -c conda-forge contextily`
 
 `conda install -c anaconda openpyxl`
 
-Then, install the local packages EpiFRIenDs v1.0, stat_tools, pregmal_pytools,
-spatial_tools and genomic_tools.
+Then, install the packages from the repositories [EpiFRIenDs v1.0](https://github.com/arnaupujol/epifriends), [stat_tools 1.0](https://github.com/arnaupujol/stat_tools), 
+[pregmal_pytools 1.0](https://github.com/arnaupujol/pregmal_pytools), [spatial_tools 1.0](https://github.com/arnaupujol/spatial_tools) and [genomics 1.0](https://github.com/arnaupujol/genomics).
 
-For this, go to each of their directories, and once there, run:
+For this, clone the repositories or download and uncompress the zip file of the release, 
+and once there, run:
 
 `python setup.py install`
 
@@ -65,12 +65,14 @@ How to use the demos:
 ----------------------------
 
 To test the performance of the scripts, go to the `demos` directory and lunch
-Jupyter lab, for example by running `jupyter lab` in a Unix terminal.
+Jupyter lab, for example by running `jupyter lab` in a Unix terminal. A data 
+directory would be required containing the databases required for the analyses. 
+The original data of Pujol et al. 'Detecting temporal and spatial malaria patterns 
+from first antenatal care visits', Nature Communications 2023 can be requested 
+by email to alfredo.mayor@isglobal.org. 
 
 All the Jupyter notebooks should run correctly. As they are by default, they
 show the expected output of each cell run and the computational time taken for
 the longest runs of the scripts. Most of the notebooks take a few minutes to
 run, only one or two can take more than one hour in a normal desktop computer.
-Notice that the demos use a simulated data that does not reproduce the results
-of the manuscript, but this data is in the exact format used in the manuscript
-to properly test the performance of the software.
+
