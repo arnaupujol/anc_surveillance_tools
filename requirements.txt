@@ -1,0 +1,8 @@
+jupyterlab
+numpy
+pandas
+geopandas>=0.9
+matplotlib
+contextily
+scipy>=1.7
+openpyxl
